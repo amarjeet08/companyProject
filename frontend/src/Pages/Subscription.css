@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.box {
+  background-image: url("/public/assets/Rectangle.png");
+  width: 377px;
+  height: 129px;
+  flex-shrink: 0;
+}
+
+.box-part1 {
+  color: #212427;
+  font-family: Roboto;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.box-part2 {
+  color: #fbbc05;
+  font-family: Roboto;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.box-part3 {
+  color: var(--basic-white, #fff);
+  font-family: Roboto;
+  font-size: 11px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.box-part4 {
+  color: var(--basic-white, #0f0e0e);
+  font-family: Inter;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.plan-box {
+  background-image: url("/public/assets/Rectanglular.png");
+  width: 300px;
+  height: 300px;
+  flex-shrink: 0;
+  margin-top: 20px;
+}
