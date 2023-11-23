@@ -23,7 +23,7 @@ const Subscription = () => {
         },
     });
 
-    const handlePayment = async () => {
+    const handlePayment = async (amount) => {
         try {
             // Fetch the order details from your server
             const response = await fetch('http://localhost:3001/create-order', {
@@ -31,7 +31,7 @@ const Subscription = () => {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ amount: 999 }), // Adjust the amount as needed
+                body: JSON.stringify({ amount }), // Adjust the amount as needed
             });
 
             if (!response.ok) {
@@ -70,6 +70,11 @@ const Subscription = () => {
         }
     };
 
+    const handleClick = (amount) => {
+        return () => {
+            handlePayment(amount)
+        }
+    }
 
 
     return (
@@ -105,7 +110,7 @@ const Subscription = () => {
 
                 <button className='price-container' >₹999/Year</button>
                 <h6>Billed every 1 year*</h6>
-                <button className='price-btn' onClick={handlePayment}>Continue with Bronze</button>
+                <button className='price-btn' onClick={handleClick(999)}>Continue with Bronze</button>
             </div>
 
             <div className='plan-box'>
@@ -120,9 +125,9 @@ const Subscription = () => {
 
                 </ol>
 
-                <button className='price-container' >₹999/Year</button>
+                <button className='price-container' >₹1599/Year</button>
                 <h6>Billed every 1 year*</h6>
-                <button className='price-btn' onClick={handlePayment}>Continue with Bronze</button>
+                <button className='price-btn' onClick={handleClick(1599)}>Continue with Bronze</button>
             </div>
         </>
     )
