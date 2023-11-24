@@ -82,7 +82,17 @@ const Subscription = () => {
 
                 </div>
 
+
             </div>
+
+            <div >
+                <img className='frame-img' src={process.env.PUBLIC_URL + '/assets/frame1.png'} alt='unable to show' />
+            </div>
+
+            <div>
+                <img className='frame-img' src={process.env.PUBLIC_URL + '/assets/frame2.png'} alt='unable to show' />
+            </div>
+
             <div className='plan-box'>
 
                 <div className='plan-box-1'>
