@@ -6,51 +6,129 @@
 
 .box {
   background-image: url("/public/assets/Rectangle.png");
-  width: 377px;
-  height: 129px;
-  flex-shrink: 0;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-size: cover;
 }
 
 .box-part1 {
   color: #212427;
   font-family: Roboto;
-  font-size: 10px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  background-color: aqua;
+  width: 400px;
+  border: none;
+  border-radius: 20px;
+  margin-left: 25px;
+  padding: 5px 10px;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .box-part2 {
   color: #fbbc05;
   font-family: Roboto;
-  font-size: 13px;
+  font-size: 30px;
   font-style: normal;
-  font-weight: 600;
+  font-weight: 800;
   line-height: normal;
+  margin-left: 25px;
 }
 
 .box-part3 {
   color: var(--basic-white, #fff);
   font-family: Roboto;
-  font-size: 11px;
+  font-size: 23px;
   font-style: italic;
   font-weight: 400;
   line-height: normal;
+  margin-left: 25px;
 }
 
 .box-part4 {
-  color: var(--basic-white, #0f0e0e);
-  font-family: Inter;
-  font-size: 10px;
+  color: black;
+  background-color: pink;
+  font-family: Roboto;
   font-style: normal;
-  font-weight: 500;
-  line-height: normal;
+  font-size: 20px;
+  font-weight: 600;
+  border-radius: 20px;
+  margin-left: 25px;
+  width: 150px;
+  text-align: center;
+  padding: 5px;
+  margin-top: 10px;
+}
+.box-image {
+  width: 300px;
+  height: 200px;
 }
 
 .plan-box {
-  background-image: url("/public/assets/Rectanglular.png");
-  width: 300px;
-  height: 300px;
-  flex-shrink: 0;
-  margin-top: 20px;
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 30px;
+  margin-inline: 30px;
+  margin: 50px;
+}
+
+.plan-box-1,
+.plan-box-2,
+.plan-box-3,
+.plan-box-4 {
+  /* background-image: url("/public/assets/Rectanglular.png");
+  background-size: cover; */
+  background-color: #297893;
+  border: none;
+  border-radius: 15px;
+  margin: 20px;
+}
+
+.price-container {
+  background-color: #4caf50; /* Green background color */
+  border: none; /* Remove border */
+  color: white; /* White text color */
+  padding: 15px 32px; /* Add some padding for better appearance */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove text underline */
+  display: inline-block;
+  font-size: 16px; /* Set font size */
+  border-radius: 5px; /* Add rounded corners */
+  cursor: pointer; /* Add hover effect */
+  transition: background-color 0.3s; /* Smooth transition for hover effect */
+  border-radius: 15px;
+  margin-left: 40px;
+  font-weight: 900;
+  width: 200px;
+}
+
+.price-container:hover {
+  background-color: #45a049; /* Darker green color on hover */
+}
+
+.price-btn {
+  margin-left: 40px;
+  background-color: black;
+  border: none;
+  color: White;
+  font-size: 15px;
+  font-weight: 800;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 5px 10px;
+  width: 200px;
+}
+
+.price-btn:hover {
+  background-color: palevioletred;
 }
